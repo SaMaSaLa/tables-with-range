@@ -1,10 +1,15 @@
-const inputVal = document.getElementById("input");
+const inputVal = document.getElementById("ipt-by");
+const inputVal2 = document.getElementById("ipt-to");
+const inputVal3 = document.getElementById("ipt-frm");
 
 const generate = document.getElementById("generate");
 const tableDiv = document.getElementById("table");
 
 generate.addEventListener("click", function () {
   const input = parseInt(inputVal.value, 10);
+  const input3 = parseInt(inputVal2.value, 10);
+  let input2 = parseInt(inputVal3.value, 10);
+
   tableDiv.innerHTML = "";
 
   /*
@@ -40,7 +45,7 @@ generate.addEventListener("click", function () {
 
   table.appendChild(tbody);
 
-  for (let i = 1; i <= 10; i++) {
+  for (let i = input2; i <= input3; i++) {
     let trt = document.createElement("tr");
     tbody.appendChild(trt);
 
@@ -53,7 +58,7 @@ generate.addEventListener("click", function () {
     trt.appendChild(tdtw);
 
     let tdth = document.createElement("td");
-    tdth.textContent = i;
+    tdth.textContent = input2;
     trt.appendChild(tdth);
 
     let tdfo = document.createElement("td");
@@ -61,7 +66,9 @@ generate.addEventListener("click", function () {
     trt.appendChild(tdfo);
 
     let tdfi = document.createElement("td");
-    tdfi.textContent = input * i;
+    tdfi.textContent = input * input2;
     trt.appendChild(tdfi);
+
+    input2++;
   }
 });
