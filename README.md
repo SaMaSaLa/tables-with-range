@@ -1,4 +1,4 @@
-# Tables
+# Tables With Range
 
 Multiplies a specific number by 1, 2, 3 and all numbers until 10 and gives a table of the result.
 
