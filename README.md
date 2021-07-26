@@ -1,9 +1,9 @@
 # Tables With Range
 
-Multiplies a specific number by 1, 2, 3 and all numbers until 10 and gives a table of the result.
+Multiplies a specific number by when you start to when you end your range and gives a table of the result.
 
-- Repository URL : [tables](https://github.com/SaMaSaLa/tables)
-- Demo URL : [Demo](https://samasala.github.io/tables/)
+- Repository URL : [tables-with-range](https://github.com/SaMaSaLa/tables-with-range)
+- Demo URL : [Demo](https://samasala.github.io/tables-with-range/)
 
 Authors:
 
